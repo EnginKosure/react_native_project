@@ -1,22 +1,32 @@
-import 'react-native-gesture-handler';
-import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {View, Text, SafeAreaView} from 'react-native';
-const App = () => {
-  return (
-    <NavigationContainer>
-      <SafeAreaView>
-        <View
-          // eslint-disable-next-line react-native/no-inline-styles
-          style={{
-            backgroundColor: 'red',
-            margin: 10,
-            padding: 5,
-          }}>
-          <Text>Hello world!</Text>
-        </View>
-      </SafeAreaView>
-    </NavigationContainer>
-  );
-};
-export default App;
+import {createStackNavigator, createAppContainer} from 'react-navigation';
+import HomeScreen from '../src/screens/HomeScreen';
+import ComponentsScreen from '../src/screens/ComponentsScreen';
+// import ListScreen from './src/screens/ListScreen';
+// import ImageScreen from './src/screens/ImageScreen';
+// import CounterScreen from './src/screens/CounterScreen';
+// import ColorScreen from './src/screens/ColorScreen';
+// import SquareScreen from './src/screens/SquareScreen';
+// import TextScreen from './src/screens/TextScreen';
+// import BoxScreen from './src/screens/BoxScreen';
+
+const navigator = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Components: ComponentsScreen,
+    // List: ListScreen,
+    // Image: ImageScreen,
+    // Counter: CounterScreen,
+    // Color: ColorScreen,
+    // Square: SquareScreen,
+    // Text: TextScreen,
+    // Box: BoxScreen,
+  },
+  {
+    initialRouteName: 'Components',
+    defaultNavigationOptions: {
+      title: 'App',
+    },
+  },
+);
+
+export default createAppContainer(navigator);
