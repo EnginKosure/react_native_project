@@ -1,4 +1,4 @@
-package com.first_rnative_project;
+package com.list_app;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "first_rnative_project";
+    return "list_app";
   }
 }
