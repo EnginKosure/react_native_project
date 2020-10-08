@@ -1,5 +1,5 @@
 import {createStackNavigator, createAppContainer} from 'react-navigation';
-import HomeScreen from './screens/NewsScreen';
+import NewsScreen from './screens/NewsScreen';
 import ComponentsScreen from '../src/screens/ComponentsScreen';
 // import ListScreen from './src/screens/ListScreen';
 // import ImageScreen from './src/screens/ImageScreen';
@@ -11,7 +11,7 @@ import ComponentsScreen from '../src/screens/ComponentsScreen';
 
 const navigator = createStackNavigator(
   {
-    Home: HomeScreen,
+    Home: NewsScreen,
     Components: ComponentsScreen,
     // List: ListScreen,
     // Image: ImageScreen,

@@ -1,0 +1,25 @@
+PODS:
+  - React (0.11.0):
+    - React/Core (= 0.11.0)
+  - react-native-material-kit (0.6.0-beta.1):
+    - React
+  - React/Core (0.11.0)
+
+DEPENDENCIES:
+  - react-native-material-kit (from `node_modules/react-native-material-kit`)
+
+SPEC REPOS:
+  trunk:
+    - React
+
+EXTERNAL SOURCES:
+  react-native-material-kit:
+    :path: node_modules/react-native-material-kit
+
+SPEC CHECKSUMS:
+  React: ab1a2e21deb34965c38328d5ec40cc7d12c6050a
+  react-native-material-kit: fcd29a6ad901670f8073433d382df2abaadb831f
+
+PODFILE CHECKSUM: a15958f10f57555d16681bb6791b73676a85afae
+
+COCOAPODS: 1.9.3

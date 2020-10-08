@@ -1,7 +1,11 @@
-project 'path/to/YourProject.project/'
+project '/Users/enginkosure/Documents/trials_3/first_rnative_project/ios/first_rnative_project.xcodeproj/'
+workspace '/Users/enginkosure/Documents/trials_3/first_rnative_project/ios/first_rnative_project.xcworkspace'
 
-pod 'React', :subspecs => ['Core', 'RCTText', 'RCTWebSocket'], :path => 'node_modules/react-native'
+# pod 'React', :subspecs => ['Core', 'RCTText', 'RCTWebSocket'], :path => 'node_modules/react-native'
 pod 'react-native-material-kit', :path => 'node_modules/react-native-material-kit'
+
+platform :ios, '8.0'
+inhibit_all_warnings!
 
 post_install do |installer|
   target = installer.pods_project.targets.select{|t| 'React' == t.name}.first
