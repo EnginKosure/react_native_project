@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import MyBanner from './components/MyBanner';
-// import MyButton from './components/MyButton';
+import MyButton from './components/MyButton';
 const food_data = [
   {
     id: 0,
@@ -63,7 +63,7 @@ const App = () => {
           style={styles.container}
           onPress={() => alert('Hello')}
           onLongPress={() => alert('Long Press')}>
-          <Text style={styles.text}>Yenile</Text>
+          <MyButton style={styles.text} buttonTitle="Refresh" />
         </TouchableOpacity>
       </View>
     </SafeAreaView>

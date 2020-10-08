@@ -8,7 +8,7 @@ const MyBanner = (props) => {
           <Text style={styles.text}>{props.title}</Text>
           <Text>{props.desc}</Text>
         </View>
-        {!props.isActive && <Text>Aktif Değil</Text>}
+        {props.isActive || <Text>Not active</Text>}
       </View>
     </View>
   );
