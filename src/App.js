@@ -60,9 +60,7 @@ const App = () => {
           );
         })}
         <TouchableOpacity
-          style={styles.container}
-          onPress={() => alert('Hello')}
-          onLongPress={() => alert('Long Press')}>
+          
           <MyButton style={styles.text} buttonTitle="Refresh" />
         </TouchableOpacity>
       </View>
