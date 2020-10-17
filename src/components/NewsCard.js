@@ -1,16 +1,16 @@
 import React from 'react';
-import {View, Image, Text, StyleSheet, Dimensions} from 'react-native';
+import { View, Image, Text, StyleSheet, Dimensions } from 'react-native';
 
-const NewsCard = ({news}) => {
+const NewsCard = ({ news }) => {
   return (
     <View style={styles.container}>
-      <Image source={{uri: news.imageUrl}} style={styles.image} />
+      <Image source={{ uri: news.imageUrl }} style={styles.image} />
       <Text style={styles.title}>{news.title}</Text>
       <Text style={styles.description}>{news.description}</Text>
     </View>
   );
 };
-export {NewsCard};
+export { NewsCard };
 const styles = StyleSheet.create({
   container: {
     flex: 1,
