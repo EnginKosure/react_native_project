@@ -17,7 +17,7 @@ import { Input, Button } from './components';
 const Login = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#b2dfdb' }}>
-      <KeyboardAvoidingViewˇ
+      <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === 'android' ? null : 'padding'}>
         <ScrollView style={{ flex: 1 }} bounces={false}>
@@ -31,7 +31,7 @@ const Login = () => {
             <Button text="Enter" />
           </View>
         </ScrollView>
-      </KeyboardAvoidingViewˇ>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 };
