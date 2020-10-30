@@ -13,4 +13,6 @@ const initialState = {
             completed: true,
         },
     ],
+    totalDone: 1,
+    totalUndone: 1,
 };
