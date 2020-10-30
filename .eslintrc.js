@@ -7,19 +7,20 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'react-native-prettier',
+    '@react-native-community',
   ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["react"],
+  plugins: ['react'],
   rules: {
-    indent: ["error", "tab"],
-    'linebreak-style': ["error", "unix"],
-    quotes: ["error", "double"],
-    semi: ["error", "always"],
+    indent: ['error', 'tab'],
+    'linebreak-style': ['error', 'unix'],
+    quotes: ['error', 'double'],
+    semi: ['error', 'always'],
   },
 };

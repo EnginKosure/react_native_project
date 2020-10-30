@@ -21,10 +21,11 @@
     "@babel/runtime": "^7.11.2",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.5.2",
-    "eslint": "^7.10.0",
+    "eslint": "^7.12.1",
     "eslint-config-react-native-prettier": "^1.0.1",
     "jest": "^26.5.2",
     "metro-react-native-babel-preset": "^0.63.0",
+    "prettier": "^2.1.2",
     "react-test-renderer": "16.13.1"
   },
   "jest": {
